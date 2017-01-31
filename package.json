@@ -9,8 +9,7 @@
     "clean": "rimraf build",
     "build:html": "npm run clean:html && copy index.html build",
     "clean:html": "rimraf build/index.html",
-    "watch:html": "npm run build:html && chokidar index.html -c npm run build:html",
-    "clean:html": "rimraf build/index.html"
+    "watch:html": "npm run build:html && chokidar index.html -c npm run build:html"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "chokidar-cli": "^1.2.0"
+    "chokidar-cli": "^1.2.0",
+    "less": "^2.7.2"
   }
 }
