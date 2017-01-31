@@ -4,13 +4,13 @@
   "description": "In the next couple of lessons we will be introducing a number of tools which will help you write cleaner, more reusable and modular code.",
   "main": "index.js",
   "scripts": {
-    "mkdir": "mkdir -p build",
+    "mkdir": "mkdir build",
     "build": "npm run clean && npm run mkdir && npm run build:html",
-    "clean": "rm -rf build",
-    "build:html": "npm run clean:html && cp index.html build/",
-    "clean:html": "rm -f build/index.html",
+    "clean": "rimraf build",
+    "build:html": "npm run clean:html && copy index.html build",
+    "clean:html": "rimraf build/index.html",
     "watch:html": "npm run build:html && chokidar index.html -c npm run build:html",
-    "clean:html": "rm -f build/index.html"
+    "clean:html": "rimraf build/index.html"
   },
   "repository": {
     "type": "git",
