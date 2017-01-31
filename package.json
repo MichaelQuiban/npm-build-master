@@ -1,0 +1,23 @@
+{
+  "name": "npm-build-master",
+  "version": "1.0.0",
+  "description": "In the next couple of lessons we will be introducing a number of tools which will help you write cleaner, more reusable and modular code.",
+  "main": "index.js",
+   "scripts": {
+     "mkdir": "mkdir -p build",
+     "clean": "rm -rf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSaintMichael/npm-build-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSaintMichael/npm-build-master/issues"
+  },
+  "homepage": "https://github.com/TheSaintMichael/npm-build-master#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
