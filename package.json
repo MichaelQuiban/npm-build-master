@@ -4,7 +4,7 @@
   "description": "In the next couple of lessons we will be introducing a number of tools which will help you write cleaner, more reusable and modular code.",
   "main": "index.js",
    "scripts": {
-     "mkdir": "mkdir -p build",
+     "mkdir": "mkdir build",
      "clean": "rm -rf build"
   },
   "repository": {
