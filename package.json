@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "mkdir": "mkdir build",
-    "build": "npm run clean && npm run mkdir && npm run build:html",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css",
     "clean": "rimraf build",
     "build:html": "npm run clean:html && copy index.html build",
     "clean:html": "rimraf build/index.html",
-    "watch:html": "npm run build:html && chokidar index.html -c npm run build:html"
+    "build:css": "npm run clean:css && lessc --source-map css/index.less build/$npm_package_name.$npm_package_version.css",
+    "watch": "npm run watch:html & npm run watch:css",
+    "clean:css": "rimraf -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map"
   },
   "repository": {
     "type": "git",
